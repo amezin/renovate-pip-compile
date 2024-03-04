@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":maintainLockFilesWeekly"
+  ],
+  "pip-compile": {
+    "fileMatch": [
+      "^requirements/([\\w-]*)\\.txt$"
+    ]
+  },
+  "pip_requirements": {
+    "enabled": false
+  }
+}
